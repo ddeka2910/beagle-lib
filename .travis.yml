@@ -13,7 +13,18 @@ matrix:
             - gdb
             - apport
             - nvidia-opencl-dev
-
+    #powerjobs
+    - compiler: gcc
+      arch: ppc64le
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - gdb
+            - apport
+            - nvidia-opencl-dev
+    
 #cache:
 #  directories:
 #    - ${OPENCL_ROOT}
